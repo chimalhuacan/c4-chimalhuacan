@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>C4 Chimalhuacán</title>
+
+<!-- ICONOS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f5f5;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(rgba(128,0,32,0.9), rgba(128,0,32,0.9)),
+    url('https://images.unsplash.com/photo-1502920917128-1aa500764ce7');
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+/* BOTONES */
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: -40px;
+}
+
+.card-btn {
+    width: 170px;
+    height: 170px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #800020;
+    font-weight: bold;
+}
+
+.card-btn i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.card-btn:hover {
+    transform: scale(1.05);
+    background: #800020;
+    color: white;
+}
+
+.activo-btn {
+    background: #800020;
+    color: white;
+}
+
+/* CONTENIDO */
+.seccion {
+    display: none;
+    padding: 40px;
+}
+
+.activa {
+    display: block;
+}
+
+.card {
+    background: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+    text-align: center;
+    color: #800020;
+}
+
+.card p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* FRASE */
+.frase {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #800020;
+}
+
+/* FOOTER */
+footer {
+    background: #800020;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+    <h1>C4 CHIMALHUACÁN</h1>
+</div>
+
+<!-- BOTONES CON ICONOS -->
+<div class="menu">
+    <div class="card-btn activo-btn" onclick="mostrar('inicio', this)">
+        <i class="fas fa-home"></i>
+        Inicio
+    </div>
+
+    <div class="card-btn" onclick="mostrar('monitoreo', this)">
+        <i class="fas fa-video"></i>
+        Monitoreo
+    </div>
+
+    <div class="card-btn" onclick="mostrar('prevencion', this)">
+        <i class="fas fa-shield-alt"></i>
+        Prevención
+    </div>
+
+    <div class="card-btn" onclick="mostrar('analisis', this)">
+        <i class="fas fa-chart-bar"></i>
+        Análisis
+    </div>
+
+    <div class="card-btn" onclick="mostrar('busqueda', this)">
+        <i class="fas fa-search"></i>
+        Búsqueda
+    </div>
+
+    <div class="card-btn" onclick="mostrar('control', this)">
+        <i class="fas fa-users-cog"></i>
+        Administración
+    </div>
+</div>
+
+<!-- INICIO -->
+<div id="inicio" class="seccion activa">
+    <div class="card">
+        <h2>C4 Chimalhuacán</h2>
+
+        <p>
+        El Centro de Control, Comando, Comunicación y Cómputo (C4) de Chimalhuacán es una institución encargada de fortalecer la seguridad pública mediante tecnología avanzada.
+        <!-- ✏️ EDITA AQUÍ -->
+        </p>
+
+        <p>
+        A través de cámaras de videovigilancia y monitoreo en tiempo real, permite responder rápidamente ante emergencias.
+        <!-- ✏️ EDITA AQUÍ -->
+        </p>
+
+        <p>
+        Su objetivo es brindar seguridad, confianza y protección a la ciudadanía.
+        <!-- ✏️ EDITA AQUÍ -->
+        </p>
+
+        <div class="frase">
+            Tecnología, Coordinación y Compromiso por tu Seguridad
+            <!-- ✏️ PUEDES CAMBIAR ESTO -->
+        </div>
+    </div>
+</div>
+
+<!-- SECCIONES -->
+<div id="monitoreo" class="seccion">
+    <div class="card">
+        <h2>Centro de Monitoreo</h2>
+        <p>El departamento de centro de monitoreo del C4 de Chimalhuacán se puede definir así:
+Es el área encargada de vigilar en tiempo real la seguridad del municipio mediante el uso de cámaras de videovigilancia, postes inteligentes y sistemas tecnológicos, con el fin de detectar, atender y dar seguimiento a emergencias o hechos delictivos.
+Este departamento forma parte del Centro de Control, Comando, Comunicación y Cómputo (C4) y tiene funciones como:
+Supervisar continuamente las cámaras distribuidas en todo el municipio
+Recibir reportes ciudadanos y coordinar la respuesta de la policía
+Analizar información para prevenir delitos
+Dar seguimiento a incidentes en tiempo real
+Apoyar en la localización de personas, vehículos o situaciones de riesgo</p>
+    </div>
+</div>
+
+<div id="prevencion" class="seccion">
+    <div class="card">
+        <h2>Prevención del Delito</h2>
+        <p>Es el conjunto de acciones, estrategias y uso de tecnología implementadas por el Centro de Control, Comando, Comunicación y Cómputo (C4) para anticipar, detectar y reducir la incidencia delictiva, mediante la vigilancia constante, el análisis de información y la coordinación con las corporaciones de seguridad.
+Esta prevención se basa en:
+La videovigilancia en tiempo real para identificar conductas sospechosas
+El análisis de datos e incidencias para detectar zonas de riesgo
+La atención inmediata de emergencias a través de reportes ciudadanos
+La coordinación con la policía y servicios de emergencia
+La implementación de estrategias preventivas en áreas con mayor incidencia delictiva</p>
+    </div>
+</div>
+
+<div id="analisis" class="seccion">
+    <div class="card">
+        <h2>Análisis y Contexto</h2>
+        <p>Es el proceso mediante el cual el Centro de Control, Comando, Comunicación y Cómputo (C4) recopila, interpreta y evalúa información proveniente de cámaras de videovigilancia, reportes ciudadanos y bases de datos, con el objetivo de comprender las condiciones de seguridad del municipio y apoyar la toma de decisiones.
+Este análisis y contexto permite:
+Identificar zonas con mayor incidencia delictiva
+Detectar patrones de conducta o actividades sospechosas
+Evaluar riesgos en tiempo real
+Generar estrategias de prevención y respuesta
+Brindar información clara a las autoridades para actuar de manera oportuna</p>
+    </div>
+</div>
+
+<div id="busqueda" class="seccion">
+    <div class="card">
+        <h2>Célula de Búsqueda</h2>
+        <p>Es el área especializada del Centro de Control, Comando, Comunicación y Cómputo (C4) encargada de coordinar, apoyar y ejecutar acciones para la localización de personas desaparecidas o no localizadas, mediante el uso de tecnología, análisis de información y trabajo conjunto con distintas autoridades.
+Sus funciones principales incluyen:
+Analizar imágenes de videovigilancia para rastrear movimientos
+Dar seguimiento a reportes de desaparición
+Coordinar operativos con policía, tránsito y otras dependencias
+Utilizar bases de datos para identificar personas o vehículos
+Apoyar en la búsqueda en tiempo real</p>
+    </div>
+</div>
+
+<div id="control" class="seccion">
+    <div class="card">
+        <h2>Control Administrativo</h2>
+        <p>Es el área del Centro de Control, Comando, Comunicación y Cómputo (C4) encargada de organizar, supervisar y gestionar los recursos humanos, materiales y tecnológicos, asegurando el correcto funcionamiento de todas las operaciones del centro.
+Sus funciones principales incluyen:
+Administrar el personal operativo y administrativo
+Supervisar el uso y mantenimiento de equipos tecnológicos y sistemas
+Controlar recursos materiales y financieros
+Coordinar la logística interna del C4
+Garantizar que los procesos se realicen de forma eficiente y ordenada</p>
+    </div>
+</div>
+
+<footer>
+    © 2026 C4 Chimalhuacán
+</footer>
+
+<script>
+function mostrar(id, boton) {
+
+    document.querySelectorAll('.seccion').forEach(s => s.classList.remove('activa'));
+    document.getElementById(id).classList.add('activa');
+
+    document.querySelectorAll('.card-btn').forEach(b => b.classList.remove('activo-btn'));
+    boton.classList.add('activo-btn');
+}
+</script>
+
+</body>
+</html>
